@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.esteelauder.openapi.mapper.MobileFoodFacilityPermitMapper" >
+    <resultMap id="BaseResultMap" type="com.esteelauder.openapi.domain.MobileFoodFacilityPermit" >
+	  	<result property="id" column="id" jdbcType="BIGINT"/>
+	  	<result property="locationId" column="location_id" jdbcType="BIGINT"/>
+	  	<result property="applicant" column="applicant" jdbcType="VARCHAR"/>
+	  	<result property="facilityType" column="facility_type" jdbcType="INTEGER"/>
+	  	<result property="cnn" column="cnn" jdbcType="VARCHAR"/>
+	  	<result property="locationDescription" column="location_description" jdbcType="VARCHAR"/>
+	  	<result property="address" column="address" jdbcType="VARCHAR"/>
+	  	<result property="blocklot" column="blocklot" jdbcType="VARCHAR"/>
+	  	<result property="block" column="block" jdbcType="VARCHAR"/>
+	  	<result property="lot" column="lot" jdbcType="VARCHAR"/>
+	  	<result property="permit" column="permit" jdbcType="VARCHAR"/>
+	  	<result property="status" column="status" jdbcType="INTEGER"/>
+	  	<result property="foodItems" column="food_items" jdbcType="INTEGER"/>
+	  	<result property="x" column="X" jdbcType="VARCHAR"/>
+	  	<result property="y" column="Y" jdbcType="VARCHAR"/>
+	  	<result property="latitude" column="latitude" jdbcType="VARCHAR"/>
+	  	<result property="longitude" column="longitude" jdbcType="VARCHAR"/>
+	  	<result property="schedule" column="schedule" jdbcType="VARCHAR"/>
+	  	<result property="dayshours" column="dayshours" jdbcType="VARCHAR"/>
+	  	<result property="noisent" column="noisent" jdbcType="VARCHAR"/>
+	  	<result property="approved" column="approved" jdbcType="TIMESTAMP"/>
+	  	<result property="received" column="received" jdbcType="VARCHAR"/>
+	  	<result property="priorPermit" column="prior_permit" jdbcType="INTEGER"/>
+	  	<result property="expirationDate" column="expiration_date" jdbcType="TIMESTAMP"/>
+	  	<result property="location" column="location" jdbcType="VARCHAR"/>
+	  	<result property="firePreventionDistricts" column="fire_prevention_districts" jdbcType="INTEGER"/>
+	  	<result property="policeDistricts" column="police_districts" jdbcType="INTEGER"/>
+	  	<result property="supervisorDistricts" column="supervisor_districts" jdbcType="INTEGER"/>
+	  	<result property="zipCodes" column="zip_codes" jdbcType="VARCHAR"/>
+	  	<result property="neighborhoods" column="neighborhoods" jdbcType="INTEGER"/>
+	  	<result property="createdBy" column="created_by" jdbcType="VARCHAR"/>
+	  	<result property="updatedBy" column="updated_by" jdbcType="VARCHAR"/>
+	  	<result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
+	  	<result property="updatedTime" column="updated_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+</mapper>

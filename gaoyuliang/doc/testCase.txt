@@ -1,0 +1,109 @@
+1. query by id
+curl -X 'GET' \
+  'http://localhost:8081/mobileFoodFacilityPermit/get?id=399' \
+  -H 'accept: */*'
+ 
+ curl -X 'POST' \
+  'http://localhost:8081/mobileFoodFacilityPermit/update' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 0,
+  "createdBy": "string",
+  "createdTime": "2024-10-10T18:13:58.920Z",
+  "updatedBy": "string",
+  "updatedTime": "2024-10-10T18:13:58.920Z",
+  "locationId": 0,
+  "applicant": "string",
+  "facilityType": 0,
+  "cnn": "string",
+  "locationDescription": "string",
+  "address": "string",
+  "blocklot": "string",
+  "block": "string",
+  "lot": "string",
+  "permit": "string",
+  "status": 0,
+  "foodItems": 0,
+  "x": "string",
+  "y": "string",
+  "latitude": "string",
+  "longitude": "string",
+  "schedule": "string",
+  "dayshours": "string",
+  "noisent": "string",
+  "approved": "2024-10-10T18:13:58.920Z",
+  "received": "string",
+  "priorPermit": 0,
+  "expirationDate": "2024-10-10T18:13:58.920Z",
+  "location": "string",
+  "firePreventionDistricts": 0,
+  "policeDistricts": 0,
+  "supervisorDistricts": 0,
+  "zipCodes": "string",
+  "neighborhoods": 0
+}'
+
+2. insert
+curl -X 'POST' \
+  'http://localhost:8081/mobileFoodFacilityPermit/insert' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 0,
+  "createdBy": "string",
+  "createdTime": "2024-10-10T18:14:28.304Z",
+  "updatedBy": "string",
+  "updatedTime": "2024-10-10T18:14:28.304Z",
+  "locationId": 0,
+  "applicant": "string",
+  "facilityType": 0,
+  "cnn": "string",
+  "locationDescription": "string",
+  "address": "string",
+  "blocklot": "string",
+  "block": "string",
+  "lot": "string",
+  "permit": "string",
+  "status": 0,
+  "foodItems": 0,
+  "x": "string",
+  "y": "string",
+  "latitude": "string",
+  "longitude": "string",
+  "schedule": "string",
+  "dayshours": "string",
+  "noisent": "string",
+  "approved": "2024-10-10T18:14:28.304Z",
+  "received": "string",
+  "priorPermit": 0,
+  "expirationDate": "2024-10-10T18:14:28.304Z",
+  "location": "string",
+  "firePreventionDistricts": 0,
+  "policeDistricts": 0,
+  "supervisorDistricts": 0,
+  "zipCodes": "string",
+  "neighborhoods": 0
+}'
+
+3. detele
+curl -X 'POST' \
+  'http://localhost:8081/mobileFoodFacilityPermit/delete?id=367' \
+  -H 'accept: */*' \
+  -d ''
+  
+4. list
+curl -X 'POST' \
+  'http://localhost:8081/mobileFoodFacilityPermit/list' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "records": [
+    {}
+  ],
+  "total": 0,
+  "size": 0,
+  "current": 6,
+  "optimizeJoinOfCountSql": true,
+  "pages": 5
+}'
